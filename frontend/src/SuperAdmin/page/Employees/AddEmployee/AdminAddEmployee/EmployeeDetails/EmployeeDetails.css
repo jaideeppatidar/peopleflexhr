@@ -1,0 +1,168 @@
+.DetailsComponents {
+  width: 100%;
+  background-color: #fff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 15px;
+  height: auto;
+}
+.AddNameEmployee{
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Example shadow */
+  padding: 20px; /* Optional: Add some padding */
+  background-color: #fff; /* Optional: Add a background color */
+}
+.EmployeeSubmitButton{
+  background-color:#6674a9 ;
+  padding: 8px 40px;
+  border-radius: 4px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.inp-details-form {
+  width: 100%;
+  background-color: #fdfbff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.inp-details-form  {
+  display: block;
+  font-size: 17px;
+
+}
+
+.input-details {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.input-error {
+  border-color: red;
+}
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+
+.check-mark-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.check-mark-icon {
+  width: auto;
+  height: 30px;
+}
+
+.check-mark-btn p {
+  margin-left: 8px;
+}
+
+.bulk-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 4px;
+  width: auto;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+.bulk-icon {
+  margin-bottom: 10px;
+}
+
+.import-icon {
+  width: auto;
+  height: 60px;
+}
+
+.bulk-text p {
+  white-space: pre-line;
+  font-size: 17px;
+}
+
+.bulk-import-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.multi-header-emp-details {
+  display: flex;
+  color: rgba(88, 80, 130);
+  background-color: lavender;
+  gap: 20px;
+  padding: 10px;
+}
+
+.multi-header-emp-details p:first-child {
+  background-color: rgb(102, 116, 169);
+  color: white;
+  padding: 6px 12px;
+  font-weight: 600;
+  position: relative;
+  clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%);
+}
+
+
+.multi-header-emp-details p:nth-child(3) {
+  background-color: rgb(102, 116, 169);
+  color: white;
+  padding: 6px 12px;
+  font-weight: 600;
+  position: relative;
+  clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 0 100%);
+}
+
+
+
+@media (max-width: 992px) {
+  .bulk-text-container {
+    margin-top: 60px;
+  }
+
+
+
+}
+
+@media (max-width: 768px) {
+  .inp-details-form {
+    padding: 10px;
+  }
+}
+
+
+
+@media (max-width: 645px) {
+ 
+  .multi-header-emp-details {
+ display: none;
+  }
+  .DetailsComponents{
+    padding: 0px;
+  }
+}
+
+
+
+

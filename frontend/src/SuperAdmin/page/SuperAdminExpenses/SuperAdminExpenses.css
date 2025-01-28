@@ -1,0 +1,349 @@
+.SuperAdminExpenses-table-container {
+  width: auto;
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 15px 15px 15px 15px;
+}
+.SuperAdminExpenses-tablebody {
+  margin-top: 12px;
+}
+.SuperAdminExpenses-table-data th {
+  text-align: center;
+  background-color: #f0eef471;
+  color: #1a1b1f;
+  font-weight: 500;
+  border-bottom: 1px solid #e4e4e4;
+  font-size: 16px;
+  width: 10%;
+  min-width: 10%;
+}
+
+.SuperAdminExpenses-table-data {
+  width: 100%;
+  border-spacing: 0;
+}
+.SuperAdminExpenses-table-data thead tr {
+  background-color: #fdfbff;
+}
+
+.SuperAdminExpenses-table-data td {
+  font-size: 14px;
+  text-align: center;
+  padding: 7px;
+  height: 45px;
+}
+.SuperAdminExpenses-table-data td button {
+  font-size: 20px;
+}
+.SuperAdminExpenses-Action-DataButon {
+  /* display: flex; */
+  align-items: center;
+  gap: 10px;
+}
+.SuperAdminExpenses-edit-button {
+  color: lightblue;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  outline: none;
+}
+.SuperAdminExpenses-Text-delete {
+  color: lightsalmon;
+  padding: 7px 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  outline: none;
+}
+.SuperAdminExpenses-edit-button:hover {
+  background-color: #dae1f3;
+  color: lightblue;
+  transform: scale(1.01);
+}
+.SuperAdminExpenses-Text-delete:hover {
+  background-color: #dae1f3;
+  color: lightsalmon;
+  transform: scale(1.01);
+}
+
+.SuperAdminExpenses-download-button-table-data {
+  display: flex;
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+}
+.SuperAdminExpenses-download-button-table-data:hover {
+  background-color: #dae1f3;
+}
+.SuperAdminExpenses-pagination-table-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #fdfbff;
+  padding: 12px 1px;
+}
+.SuperAdminExpenses-DeletebtnView {
+  width: auto;
+  height: 20px;
+  cursor: pointer;
+  align-items: center;
+}
+.SuperAdminExpenses-row-checkbox {
+  padding: 0;
+  cursor: pointer;
+}
+
+.SuperAdminExpenses-tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.SuperAdminExpenses-tooltip .SuperAdminExpenses-tooltip-text {
+  visibility: hidden;
+  width: auto;
+  max-width: 90vw; /* Limit the width to 90% of the viewport on mobile */
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  /* bottom: 125%;  */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Show the tooltip on hover */
+.SuperAdminExpenses-tooltip:hover .SuperAdminExpenses-tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.expenses-dialogs-section {
+  width: 100%;
+  max-width: auto;
+  margin: 0 auto;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dialog-container {
+  width: 40%;
+  height: auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.dialog-content-text-area p {
+  padding: 8px;
+  line-height: 1.5;
+  font-size: 16px;
+  color: #333;
+}
+
+.dialog-btn-container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px 0;
+  gap: 10px;
+}
+
+/* Active (selected) button */
+.selected {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.expenses-dialogs-section {
+  backdrop-filter: blur(3px); /* Adjust the blur value as needed */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.2
+  ); /* Optional: Darken the background slightly */
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  gap: 10px; /* Adds spacing between the buttons */
+}
+
+.dialog-btn {
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: none; /* Removes default uppercase */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.dialog-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Primary button styling */
+.dialog-btn-primary {
+  background-color: #15859b !important;
+  color: #fff !important;
+}
+
+.dialog-btn-primary:hover {
+  background-color: #0056b3 !important;
+}
+
+/* Secondary button styling */
+.dialog-btn-secondary {
+  background-color: #6c757d !important;
+  color: #fff !important;
+}
+
+.dialog-btn-secondary:hover {
+  background-color: #5a6268 !important;
+}
+
+/* Disabled button styling */
+.dialog-btn:disabled {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.3);
+  cursor: not-allowed;
+}
+
+/* General status style */
+.status-approve,
+.status-pending,
+.status-reject {
+  font-weight: bold;
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  line-height: 25px;
+  vertical-align: middle;
+  padding: 3px 10px;
+  border-radius: 6px;
+}
+
+/* Approved status */
+.status-approve {
+  background-color: #d4edda !important;
+  color: #155724;
+}
+
+/* Pending status */
+.status-pending {
+  background-color: #d6e9f9 !important;
+  color: #0d6efd;
+}
+
+/* Rejected status */
+.status-reject {
+  background-color: #f8d7da !important;
+  color: #721c24;
+}
+
+@media (max-width: 480px) {
+  .SuperAdminExpenses-tooltip {
+    display: flex;
+  }
+}
+
+@media (max-width: 1100px) {
+  .SuperAdminExpenses-table-data thead {
+    display: none;
+  }
+
+  .SuperAdminExpenses-table-data tr,
+  .SuperAdminExpenses-table-data td {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .SuperAdminExpenses-table-data tbody tr td {
+    position: relative;
+    text-align: right;
+    padding-right: 10px;
+    padding: 10px;
+    height: 70px;
+    /* width: 300px; */
+  }
+
+  .SuperAdminExpenses-table-data td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 12px;
+    text-align: left;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+  }
+  .SuperAdminExpenses-table-data td::before {
+    display: flex;
+    text-align: center;
+  }
+}
+
+@media (max-width: 458px) {
+  .SuperAdminExpenses-table-data tbody tr td {
+    width: 322px;
+  }
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .dialog-container {
+    padding: 15px;
+  }
+
+  .dialog-btn-container {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .dialog-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .expenses-dialogs-section {
+    padding: 10px;
+  }
+
+  .dialog-container {
+    padding: 10px;
+  }
+
+  .dialog-btn {
+    width: 100%;
+    padding: 12px;
+  }
+}

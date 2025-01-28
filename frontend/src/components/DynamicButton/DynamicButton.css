@@ -1,0 +1,10 @@
+@media (max-width: 480px) {
+    .dynamic-button {
+      width: 100% !important;
+    }
+  }
+  @media (max-width: 769px) {
+    .dynamic-button {
+      width: 100% !important;
+    }
+  }

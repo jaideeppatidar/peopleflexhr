@@ -1,0 +1,345 @@
+.container {
+  width: 100%;
+  height: auto;
+  background-color: #000;
+}
+
+.profile-card {
+  background-color: #fff;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.profile-header {
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+  padding: 15px;
+  border: 1px solid lightblue;
+  box-shadow: 0 4px 8px rgba(173, 216, 230, 0.5);
+}
+
+.profile-photo {
+  background-color: #0073e6;
+  color: #fff;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.NameContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.EmployeeNameContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.tab-navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  border: 2px solid lightblue;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.active-tab {
+  border-bottom: 2px solid #0073e6;
+}
+
+.tab-content {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.absence-section {
+  margin-top: 20px;
+  display: contents;
+}
+
+.HeaderPersonalDetails {
+  display: flex;
+  justify-content: space-between;
+}
+
+.absence-header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.main-employment-container {
+  background-color: #fff;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+}
+
+.employment-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid lightblue;
+}
+
+.overtime-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.overtime-sections {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section {
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid lightblue;
+  width: 48%;
+}
+
+.OverTimeTitle {
+  background-color: rgba(173, 216, 230, 0.669);
+  padding: 10px;
+  color: #000;
+  font-weight: 600;
+}
+
+.overtime-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+  width: auto;
+}
+
+.use-toil-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+}
+
+.accordion-button {
+  background-color: #f8f9fa;
+  color: #000;
+  border: 1px solid #ddd;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+  justify-content: space-between;
+  display: flex;
+}
+
+.accordion-content {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+@media screen and (max-width: 769px) {
+  .container {
+    width: auto;
+  }
+
+  .profile-card {
+    width: auto;
+    display: flex;
+    align-items: normal;
+    padding: 0px;
+  }
+
+  .tab-navigation {
+    width: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .tab-btn {
+    width: auto;
+    padding: 8px;
+  }
+
+  .absence-footer-container {
+    width: auto;
+    display: flex;
+  }
+
+  .employment-container {
+    padding: 0px;
+    width: auto;
+  }
+
+  .main-employment-container {
+    width: 100%;
+  }
+  .overtime-details {
+    padding: 5px;
+    gap: 23px;
+  }
+  .HeaderPersonalDetails{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap ;
+  }
+  .main-employment-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .overtime-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .Overtime{
+    padding: 5px;
+    flex-direction: column;
+    display: flex;
+  }
+  .overtime-header{
+    display: flex;
+    flex-direction: column;
+  }
+  .overtime-sections{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 10px;
+
+  }
+  .info-section{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .contact-info-section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+  }
+  .contact-details{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+  }
+  .header-container-employee{
+    display: flex;
+    flex-direction: column;
+  }
+  .actions-cotaier-employee{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: auto;
+    align-items: center;
+  }
+ 
+}
+@media screen and (max-width: 460px) {
+  .profile-header {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-photo {
+    width: 50px;
+    height: 50px;
+  }
+  .NameContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .tab-navigation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .HeaderPersonalDetails{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap ;
+  }
+  .profile-card {
+    width: auto;
+    display: flex;
+    align-items: normal;
+    padding: 5px;
+  }
+  .tab-content{
+    padding: 5px;
+    flex-direction: column;
+    display: flex;
+  }
+  .main-employment-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .Overtime{
+    padding: 5px;
+    flex-direction: column;
+    display: flex;
+  }
+  .overtime-header{
+    display: flex;
+    flex-direction: column;
+  }
+  .overtime-sections{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 10px;
+
+  }
+  .info-section{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .tab-content{
+    width: auto;
+
+  }
+}
