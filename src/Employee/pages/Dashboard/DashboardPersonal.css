@@ -1,0 +1,177 @@
+/* Form Paper styling */
+.dashboard-personal-form-container {
+  width: 100%;
+  background-color: #fff;
+  height: auto;
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.dashboard-personal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.dashboard-personal-form-title {
+  margin-bottom: 1rem;
+  color: #333;
+}
+.EmolpyeePersonalDetails {
+  padding: 20px;
+  box-shadow: 2px 4px 4px 4px rgba(0, 144, 255, 0.2);
+
+  background-color: white;
+  border-radius: 6px;
+}
+.EmployeeAddreshDetails {
+  padding: 20px;
+  box-shadow: 2px 4px 4px 4px rgba(0, 144, 255, 0.2);
+
+  background-color: white;
+  border-radius: 6px;
+}
+.EmployeeBankDetails {
+  padding: 20px;
+  box-shadow: 2px 4px 4px 4px rgba(0, 144, 255, 0.2);
+
+  background-color: white;
+  border-radius: 6px;
+}
+.EmployeeSensitiveDetails {
+  padding: 20px;
+  box-shadow: 2px 4px 4px 4px rgba(0, 144, 255, 0.2);
+
+  background-color: white;
+  border-radius: 10px;
+}
+
+.EmployeePassportDetails {
+  padding: 20px;
+  box-shadow: 2px 4px 4px 4px rgba(0, 144, 255, 0.2);
+
+  background-color: white;
+  border-radius: 6px;
+}
+.EmployeeDrivingDetails {
+  padding: 20px;
+  box-shadow: 2px 4px 4px 4px rgba(0, 144, 255, 0.2);
+
+  background-color: white;
+  border-radius: 6px;
+}
+.EmployeeVisaDetails {
+  padding: 20px;
+  box-shadow: 2px 4px 4px 4px rgba(0, 144, 255, 0.2);
+
+  background-color: white;
+  border-radius: 6px;
+}
+
+/* Grid items styling */
+.MuiGrid-item {
+  padding: 0.5rem;
+}
+
+/* Input fields and dropdowns */
+.MuiTextField-root,
+.MuiFormControl-root {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+/* Emergency contact container */
+.dashboard-personal-emergency-container {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #fff;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 144, 0.1); */
+  box-shadow: 2px 4px 4px 4px rgba(0, 144, 255, 0.2);
+  font-size: 0.9rem;
+  color: #666;
+}
+.dashboard-personal-emergency-container {
+  margin-top: 1rem;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.form-group {
+  flex: 1 1 calc(50% - 1rem); /* Two columns with gap */
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-control {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+/* Date Picker inputs */
+.MuiInputBase-root input[type="date"] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.UploadProfilePersonal{
+  font-weight: 700;
+}
+.two-btn-in-one {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.EditButtonAllField{
+  padding: 10px;
+  background-color: rgb(99, 99, 142);
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+.EditButtonAllField:hover{
+  background-color: darkred;
+  color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+  .dashboard-personal-form-container {
+    padding: 1.5rem;
+  }
+  .dashboard-personal-right-container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-personal-form-container {
+    padding: 1rem;
+  }
+  .EditInputField{
+    width: 260px;
+  }
+}

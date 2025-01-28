@@ -1,0 +1,94 @@
+/* Popup container styling */
+.admin-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6); /* Darker semi-transparent background */
+  z-index: 9999;
+}
+
+/* Popup content styling */
+.admin-popup-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+/* Title styling */
+.admin-popup-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* File input styling */
+.admin-popup-content input[type="file"] {
+  margin-top: 15px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Button styling */
+.admin-popup-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0056b3; /* Primary blue color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin-popup-content button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Close button styling */
+.admin-popup-content .close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  color: #333;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Custom file input hover effect */
+.admin-popup-content input[type="file"]:hover {
+  border-color: #0056b3;
+}
+
+/* Add a subtle animation for popup appearance */
+@keyframes popupFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.admin-popup-content {
+  animation: popupFadeIn 0.3s ease-in-out;
+}

@@ -1,0 +1,183 @@
+.login-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction:row ;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('/public/assets/images/loginback.jpeg');
+
+}
+.LoginPageBox {
+  width: auto;
+  height:auto;
+  margin: 0 auto; /* To center the box */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 2px 5px 10px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #fff; 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.left-section {
+  /* background-color: lavender; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 20px;
+}
+.image-section{
+  width: 350px;
+  height: 350px
+}
+
+.right-section {
+  width: 50vh;
+  padding: 20px;
+  /* background-color:lavender; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.UserSelectButton{
+  margin-top: 20px;
+}
+.EmployeeLogin{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-header h1 {
+  display: flex;
+  justify-content: center; 
+}
+
+.company-logo1 {
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 30px;
+  margin-left: 8px;
+}
+
+.user-type-selector {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.login-button{
+  background-color: #57002c;
+  width: 100%;
+  padding: 6px;
+  border-radius: 5px;
+  color: white;
+}
+
+
+
+/* Media queries for various devices */
+@media (max-width: 1200px) {
+  .left-section {
+    width: 35vw;
+  }
+
+
+}
+
+@media (max-width: 769px) {
+  .login-container {
+    flex-direction: column;
+    height: auto;
+  }
+  .left-section{
+    display: none;
+  }
+  .LoginPageBox{
+    width: 350px;
+    height: 100vh;
+    border-radius: 0%;
+  }
+
+ 
+  .left-section,
+  .right-section {
+    /* width: 100%; */
+    padding: 10px;
+  }
+
+  .right-section {
+    padding-top: 0; /* Adjust padding for better layout */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .left-section{
+    display: none;
+  }
+
+  .image-section img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .UserSelectButton {
+    margin-top: 20px;
+  }
+
+  .EmployeeLogin {
+    margin-top: 20px;
+  }
+
+  .login-header h1 {
+    font-size: 1.5rem;
+  }
+
+ 
+  .user-type-selector {
+    flex-direction: column;
+    gap: 10px;
+    width: auto;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-section{
+    display: none;
+  }
+.DynamicButton{
+  width: 100%;
+}
+  
+
+  .login-header h1 {
+    font-size: 1.3rem;
+  }
+
+  .UserSelectButton {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px;
+  }
+
+  .EmployeeLogin {
+    margin-top: 15px;
+  }
+
+
+  .custom-text-field {
+    margin-bottom: 15px; /* More spacing for touch devices */
+  }
+
+  .company-logo1 {
+    max-height: 34px;
+  }
+}

@@ -1,0 +1,125 @@
+.added-failed-container {
+    padding: 20px;
+    justify-content: flex-start; /* Align buttons to the left */
+}
+.FinalSummaryContainer{
+  background-color: white;
+  width: 100%;
+  height:'auto';
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+.FinalSummaryHeader{
+    display: flex;
+    justify-content: flex-start;
+    color: rgba(88, 80, 130);
+    gap: 20px;
+    border-bottom: 4px solid rgb(88 80 130);
+}
+.HeddingFinalSummary{
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px;
+}
+.ActiveButtonFinalSummary{
+    border: 1px solid black;
+}
+
+
+/* Underline effect for active buttons */
+.added-failed-container .added-btn.underline,
+.added-failed-container .failed-btn.underline {
+    border-bottom: 2px solid rgba(88, 80, 130, 1); /* Underline for active button */
+}
+
+
+
+
+
+.final-summary-tablebody {
+    overflow-x: auto; /* Allows horizontal scrolling on smaller screens */
+    width: 100%;
+    margin-top: 12px;
+}
+
+.final-summary-table-data {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.final-summary-table-data th,
+.final-summary-table-data td {
+    padding: 10px; /* Consistent padding for table cells */
+    text-align: left; /* Align text to the left */
+}
+
+.final-summary-table-data th {
+    background-color: #f4f4f4; /* Light gray background for header */
+    font-weight: bold; /* Bold header text */
+}
+
+.final-summary-table-data tbody tr {
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.final-summary-table-data tbody tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+.w{
+    width: 10px; /* Specific width for checkbox column */
+}
+
+.icon-knowing{
+    display: flex;
+    padding: 20px 0px 0px 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: left;
+}
+
+.icon-knowing p{
+    padding: 5px;
+}
+.FinalSummaryButtonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.FinalSummaryButtonStart{
+    border: 2px solid rgb(88 80 130);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 20px;
+    cursor: pointer;
+    color: rgb(88 80 130);
+    font-weight: 500;
+}
+.FinalSummaryButtonBack{
+    border: 2px solid rgb(88 80 130);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 20px;
+    cursor: pointer;
+    color: rgb(88 80 130);
+    font-weight: 500;
+}
+.FinalAllContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.AddNextButton{
+    background-color: rgb(88 80 130);
+    color: white;
+    border-radius: 5px;
+    padding: 7px 20px;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+}

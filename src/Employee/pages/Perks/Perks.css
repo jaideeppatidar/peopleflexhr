@@ -1,0 +1,108 @@
+/* Perks Container */
+.my-perks-container {
+  background-color: white;
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.FilterPerks {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.FilterPerks h2 {
+  margin: 0;
+  font-weight: 600;
+  color: black;
+}
+
+/* Perks Card */
+.Perks-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* justify-content: space-between; */
+}
+.Perks-show {
+  color: #28a745;
+  background-color: #eafaf1;
+  border: 1px solid #28a745;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  /* width: 100px; */
+  cursor: pointer;
+  font-weight: 700;
+  text-align: end;
+}
+
+.box {
+  width: 32%;
+  border-radius: 5px;
+  background-color: #fdfbff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  padding: 10px;
+}
+
+.box:hover {
+  transform: scale(1.01);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.perks-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.perks-header img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.details-content {
+  margin: 10px 0;
+  width: auto;
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 1300px) {
+  .box {
+    width: 100%;
+  }
+  .FilterPerks h2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .FilterPerks {
+    flex-direction: column;
+    align-items: center;
+  }
+  .box .title {
+    font-size: 13px;
+  }
+  .box .perks-header img {
+    width: 150px;
+    height: 150px;
+  }
+  .ShowDetails {
+    font-size: 13px;
+  }
+}

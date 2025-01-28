@@ -1,0 +1,104 @@
+/* Center the main container */
+.emp-add-success-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.emp-add-success-container {
+  width: 40%;
+  height: 70%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.heading-section {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.success-heading {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  padding: 12px;
+  border-radius: 0.5rem;
+  background-color: rgba(88, 80, 130, 1);
+  margin-top: -10px;
+}
+
+.email-notification {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.search-select-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.select-deselect-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.employee-list-section {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.action-button-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.skip-button-emp,
+.save-button-emp{
+  color: rgba(88, 80, 130, 1);
+  background-color: white;
+  color: rgba(88, 80, 130, 1);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-transform: none;
+  box-shadow: 0px 4px 6px rgba(88, 80, 130, 0.6);
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  font-weight: 700;
+  border: 2px solid rgba(88, 80, 130, 1);
+}
+
+.close-emp-btn{
+    margin-top: 12px;
+    border: 2px solid black;
+    padding: 0px 10px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.close-emp-btn:hover{
+    color: red;
+    border: 2px solid red;
+}
+
+.skip-button-emp:hover{
+    background-color: rgba(88, 80, 130, 0.8);
+    color: #fff;
+}
+
+.save-button-emp:hover{
+    background-color: rgba(88, 80, 130, 0.8);
+    color: #fff;
+}
+
+.skip-button-emp{
+    margin-left: 60%;
+}

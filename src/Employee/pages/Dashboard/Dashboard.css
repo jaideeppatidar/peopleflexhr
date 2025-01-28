@@ -1,0 +1,105 @@
+.employeedashboard {
+  width: auto;
+}
+
+.employeedashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 10px;
+  position: relative;
+  width:100%;
+}
+.left-side {
+  display: flex;
+  align-items: center;
+}
+.company-logo {
+  width: 50px;
+  height: 50px;
+}
+.header-logo img {
+  width: auto;
+  height: 25px;
+}
+.header-logo h1 span {
+  color: red;
+}
+
+.follow-button {
+  background-color: #0073b1;
+}
+.linkedin-icon {
+  font-size: 35px;
+}
+.profile-image-containerd {
+  background: rgb(102, 116, 169);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-initials {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.empprofile-img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.announcement {
+  background-color: #aca9a939;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(28, 28, 28, 0.201);
+  font-size: 12px;
+}
+.chat-box {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+  position: fixed;
+  margin-right: 20px;
+  right: 20px;
+}
+
+.parygrap-dasboard{
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .announcement .parygrap-dasboard {
+    font-size: 12px;
+  }
+  .left-side img {
+    width: 50px;
+    height: 50px;
+  }
+  .chat-box img {
+    width: 50px;
+    height: 50px;
+  }
+  .profile-image-containerd{
+    width: 60px;
+  height: 60px;
+  }
+  .DashboardEmployeeName{
+    font-size: 10px;
+  }
+}

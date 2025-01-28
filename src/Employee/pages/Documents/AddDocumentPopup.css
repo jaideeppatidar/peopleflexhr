@@ -1,0 +1,205 @@
+.dropzone.dragging {
+  border-color: #000;
+}
+
+.upload-icon {
+  width: 50px;
+}
+
+.dropzone p {
+  margin: 10px 0;
+}
+
+.dropzone button {
+  margin-top: 10px;
+}
+
+.dropzone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+.dropzone.dragging {
+  background-color: #e0e0e0;
+}
+
+.dropzone .uploadfilebutton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgb(25, 164, 134);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dropzone .uploadfilebutton input[type="file"] {
+  display: none;
+}
+
+.dropzone p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #666;
+}
+
+.dropzone .icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-button-employee {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+
+.cancel-button-document {
+  background: #e0dfdf;
+  color: red;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 150px;
+
+}
+
+.save-button-document {
+  background: #1c72b8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+.popup-dialog {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.popup-form {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+
+.popup-content {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.popup-image-container {
+  flex: 1;
+  text-align: center;
+}
+
+.popup-image {
+  width: 100%;               
+  max-width: 250px;          
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.popup-form-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;  
+}
+
+.dropzone-container {
+  margin-top: 20px;
+}
+
+.dropzone {
+  border: 1px dashed #888;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .popup-form-container .MuiTextField-root {
+    margin-bottom: 12px;
+  }
+
+  .popup-image-container {
+    text-align: center;
+    flex: 1;
+  }
+
+  .popup-image {
+    max-width: 200px;
+    height: auto;
+  }
+
+  .popup-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popup-form-container {
+    flex: none;
+    width: 100%;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-buttons .MuiButton-root {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+} */

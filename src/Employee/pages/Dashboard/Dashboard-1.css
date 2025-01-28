@@ -1,0 +1,158 @@
+.dashboard-container {
+    padding: 1rem;
+    background-color: white;
+    width: '100%';
+    height: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+  }
+  
+  .dashboard-grid {
+    margin-top: 20px;
+    padding: 20px;
+    display: grid;
+    gap: 1rem;
+    /* grid-template-columns: repeat(1, 1fr); */
+    background-color: lavender;
+  }
+  
+  @media (min-width: 768px) {
+    
+  }
+  
+  @media (min-width: 1024px) {
+    .dashboard-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .dashboard-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    padding: 1rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease-in-out;
+    background-color: white;
+    height: auto;
+    width: 280px;
+  }
+  
+  .dashboard-card:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transform: translateY(-2px);
+  }
+  
+  /* Card content layout */
+  .card-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  /* Profile image */
+  .profile-image {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 9999px;
+    object-fit: cover;
+  }
+  
+  /* Profile info container */
+  .profile-info {
+display: flex;
+flex-direction: row;
+gap: 15px;
+}
+  
+  /* Employee name */
+  .employee-name {
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Action buttons container */
+  .action-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+  }
+  
+  /* View details link */
+  .view-details-link {
+    color: #3b82f6;
+    font-size: 0.875rem;
+    text-decoration: none;
+  }
+  
+  .view-details-link:hover {
+    color: #2563eb;
+  }
+  
+  /* Visibility button */
+  .visibility-button {
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .visibility-button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  /* Modal/Popup styles */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    max-width: 28rem;
+    width: 100%;
+    margin: 0 1rem;
+  }
+  
+  .modal-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #1f2937;
+  }
+  
+  .modal-close-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .modal-close-button:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Loading and error states */
+  .loading-state,
+  .error-state {
+    padding: 1rem;
+  }
+  
+  .error-state {
+    color: #ef4444;
+  }

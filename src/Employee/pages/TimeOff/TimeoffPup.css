@@ -1,0 +1,58 @@
+.timeoff-Container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.dialog {
+  max-width: 600px;
+}
+
+.form-button-employee {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cancel-button-timeoff {
+  background: #e0dfdf;
+  color: red;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.save-button-timeoff {
+  background: #1f66a0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 150px;
+
+}
+
+.save-button-timeoff:disabled {
+  background: #e0e0e0;
+  color: #b0b0b0;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 4px;
+  display: inline-block;
+  color: #555;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
